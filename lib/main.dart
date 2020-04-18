@@ -31,7 +31,10 @@ class Home extends StatelessWidget {
           ),
           Text(
             "Indonesia melawan Corona",
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+            style: TextStyle(
+                fontSize: 35,
+                fontFamily: 'DancingScript',
+                fontWeight: FontWeight.bold),
           ),
           RefreshIndicator(
             onRefresh: () =>
@@ -121,7 +124,7 @@ class Home extends StatelessWidget {
                         ),
                         SizedBox(height: 20),
                         Text(
-                          data.dataModel.waktuUpadte.toString(),
+                          "Tgl. update: ${data.dataModel.waktuUpadte.toString()}",
                           style: TextStyle(fontSize: 10),
                         ),
                       ],
